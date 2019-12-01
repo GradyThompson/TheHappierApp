@@ -82,6 +82,15 @@ public class Task {
         list15.add("Bake for a friend in need");
         list15.add("Chocolate chip cookies sound good!");
         hardMap.put(5,list15);
+        List<String> list16 = new ArrayList<>();
+        list16.add("Go for coffee with a friend");
+        list16.add("Bonus if you pay for their coffee too");
+        easyMap.put(4,list16);
+        List<String> list17 = new ArrayList<>();
+        list17.add("Call a relative you haven't spoken to in a while");
+        list17.add("Ask about their day and update them on any exciting news in your life");
+        easyMap.put(5,list17);
+        
     }
 
     public Task(String difficulty) {
