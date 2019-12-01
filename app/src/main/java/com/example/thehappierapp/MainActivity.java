@@ -13,7 +13,11 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 import android.widget.Button;
 
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
+
+    public static String difficulty;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                difficulty = "easy";
                 MainActivity.this.startActivity(new Intent(MainActivity.this, DailyChoicesActivity.class));
             }
         });
@@ -33,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                difficulty = "medium";
                 startActivity(new Intent(MainActivity.this, DailyChoicesActivity.class));
             }
         });
@@ -42,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                difficulty = "hard";
                 startActivity(new Intent(MainActivity.this, DailyChoicesActivity.class));
             }
         });

@@ -18,5 +18,6 @@
         </activity>
         <activity android:name=".DailyChoicesActivity"></activity>
         <activity android:name=".Complete"></activity>
+        <activity android:name=".Completed"></activity>
     </application>
 </manifest>
