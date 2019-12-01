@@ -21,8 +21,8 @@
     <string name="next_task">The next task will appear in:</string>string>
     <string name="time_until_next">2 hours</string>string>
 
-    <string name="streak">STREAK</string>
-    <string name="streak_num">0 Days</string>
+    <string name="streak">Score</string>
+    <string name="streak_num">0 points</string>
     <string name="welcome_message">Welcome to The Happy App</string>
     <string name="select_task">Please select the type of task you would like to complete today</string>
     <string name="easy">EASY</string>

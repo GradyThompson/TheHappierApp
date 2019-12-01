@@ -29,12 +29,12 @@ public class MainActivity extends AppCompatActivity {
         Button btn = findViewById(R.id.easy);
         ProgressBar progressBar = (ProgressBar) findViewById(R.id.streak_bar);
         progressBar.setProgress(progress);
-        TextView streaks = (TextView) findViewById(R.id.streak);
+        TextView streaks = (TextView) findViewById(R.id.streak_num);
         String streak;
         if (progress != 1) {
-            streak = (progress + "days");
+            streak = (progress + " points");
         } else {
-            streak = (progress + "day");
+            streak = (progress + " point");
         }
         streaks.setText(streak);
 

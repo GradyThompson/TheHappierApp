@@ -24,7 +24,8 @@ public class Complete extends AppCompatActivity{
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Complete.this, Completed.class));
+                MainActivity.progress ++;
+                startActivity(new Intent(Complete.this, MainActivity.class));
             }
         });
 
@@ -33,7 +34,7 @@ public class Complete extends AppCompatActivity{
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Complete.this, Completed.class));
+                startActivity(new Intent(Complete.this, DailyChoicesActivity.class));
             }
         });
     }

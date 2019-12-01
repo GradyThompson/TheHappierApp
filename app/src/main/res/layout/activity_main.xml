@@ -32,7 +32,7 @@
                 android:layout_weight="1"
                 android:gravity="left"
                 android:text="@string/streak"
-                android:textSize="40dp" />
+                android:textSize="35sp" />
 
             <ImageView
                 android:id="@+id/smile_icon"
@@ -44,9 +44,9 @@
             <TextView
                 android:id="@+id/streak_num"
                 android:layout_width="0dp"
-                android:textSize="40sp"
+                android:textSize="35sp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="1.5"
                 android:gravity="end"
                 android:text="@string/streak_num" />
 
