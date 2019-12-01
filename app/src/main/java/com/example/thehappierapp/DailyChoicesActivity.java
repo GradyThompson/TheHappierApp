@@ -15,7 +15,7 @@ public class DailyChoicesActivity extends AppCompatActivity {
     private String button1;
     private String button2;
     private String button3;
-    public static CharSequence task;
+    public static Task task;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,11 +40,14 @@ public class DailyChoicesActivity extends AppCompatActivity {
         buttonChoice3.setText(button3);
 
         final Button finalBtn1 = buttonChoice1;
+        final Task finalTask1 = task1;
+        final Task finalTask2 = task2;
+        final Task finalTask3 = task3;
 
         buttonChoice1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                task = finalBtn1.getText();
+                task = finalTask1;
                 startActivity(new Intent(DailyChoicesActivity.this, Complete.class));
             }
         });
@@ -54,7 +57,7 @@ public class DailyChoicesActivity extends AppCompatActivity {
         buttonChoice2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                task = finalBtn2.getText();
+                task = finalTask2;
                 startActivity(new Intent(DailyChoicesActivity.this, Complete.class));
             }
         });
@@ -64,7 +67,7 @@ public class DailyChoicesActivity extends AppCompatActivity {
         buttonChoice3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                task = finalBtn3.getText();
+                task = finalTask3;
                 startActivity(new Intent(DailyChoicesActivity.this, Complete.class));
             }
         });

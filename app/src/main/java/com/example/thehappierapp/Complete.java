@@ -17,7 +17,7 @@ public class Complete extends AppCompatActivity{
         setContentView(R.layout.complete);
 
         TextView text = (TextView) findViewById(R.id.placeholder);
-        text.setText(DailyChoicesActivity.task);
+        text.setText(DailyChoicesActivity.task.getTask() + "\n" + DailyChoicesActivity.task.getTip());
 
         Button btn = findViewById(R.id.completeButton);
 
