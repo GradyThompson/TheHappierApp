@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/background">
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -57,7 +59,7 @@
             android:layout_height="20dp"
             android:layout_weight="1"
             android:progress="60"
-            android:progressTint="#5AFF00" />
+            android:progressTint="@color/buttons" />
 
         <TextView
             android:id="@+id/welcome_message"
@@ -84,21 +86,27 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/easy" />
+            android:text="@string/easy"
+            android:background="@drawable/button"
+            android:layout_marginBottom="10dp"/>
 
         <Button
             android:id="@+id/medium"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/medium" />
+            android:text="@string/medium"
+            android:background="@drawable/button"
+            android:layout_marginBottom="10dp"/>
         <Button
             android:id="@+id/hard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_gravity="right"
-            android:text="@string/hard" />
+            android:text="@string/hard"
+            android:background="@drawable/button"
+            android:layout_marginBottom="10dp"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
