@@ -24,18 +24,18 @@ public class DailyChoicesActivity extends AppCompatActivity {
         setContentView(R.layout.daily_choices_menu);
 
         List<Task> list;
-        try {
-            list = Task.filter(MainActivity.difficulty);
-        } catch (Exception e) {
-            throw new RuntimeException();
-        }
-        button1 = list.get(1).task;
+
+            Task task1 = new Task(MainActivity.difficulty);
+            Task task2 = new Task(MainActivity.difficulty);
+            Task task3 = new Task(MainActivity.difficulty);
+
+        button1 = task1.task;
         Button buttonChoice1 = (Button) findViewById(R.id.button_choice1);
         buttonChoice1.setText(button1);
-        button2 = list.get(2).task;
+        button2 = task2.task;
         Button buttonChoice2 = (Button) findViewById(R.id.button_choice2);
         buttonChoice2.setText(button2);
-        button3 = list.get(3).task;
+        button3 = task3.task;
         Button buttonChoice3 = (Button) findViewById(R.id.button_choice3);
         buttonChoice3.setText(button3);
 
