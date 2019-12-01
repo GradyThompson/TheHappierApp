@@ -1,0 +1,189 @@
+{
+  "array": [
+    {
+      "level": "easy",
+      "completed": false,
+      "task": "Hug someone in need",
+      "tip": "Make sure you know the person first ;)",
+    },
+    {
+      "level": "medium",
+      "completed": false,
+      "task": "Buy the person behind you in line a coffee",
+      "tip": "Buy yourself one too!"
+    },
+    {
+      "level": "hard",
+      "completed": false,
+      "task": "Call someone you haven't spoken to in a while",
+      "tip": "Call back in an hour if they don't pick up the first time"
+    },
+    {
+      "level": "medium",
+      "completed": false,
+      "task": "Compliment a stranger",
+      "tip": "Is it their smile? Their top? Their aura?"
+    },
+    {
+      "level": "medium",
+      "completed": false,
+      "task": "Text your best friend how much they mean to you",
+      "tip": "Add a heart emoji if you're really feeling it"
+    },
+    {
+      "level": "hard",
+      "completed": false,
+      "task": "Spend 10 minutes meditating today",
+      "tip": "Look for an app or YouTube video if you need guidance"
+    },
+    {
+      "level": "easy",
+      "completed": false,
+      "task": "Hold a door open for someone today",
+      "tip": "Bonus points if you smile :)"
+    },
+    {
+      "level": "medium",
+      "completed": false,
+      "task": "Tell a stranger to have a great day",
+      "tip": "In line at the grocery store? Sitting next to someone on a bus?"
+    },
+    {
+      "level": "medium",
+      "completed": false,
+      "task": "Leave a large tip",
+      "tip": "20%???? 25%???"
+    },
+    {
+      "level": "hard",
+      "completed": false,
+      "task": "Leave a large tip accompanied by a nice note or conversation",
+      "tip": "Make your server feel appreciated"
+    },
+    {
+      "level": "hard",
+      "completed": false,
+      "task": "Offer to do an errand for a friend in need",
+      "tip": "Basically be Cinderella for an hour or two"
+    },
+    {
+      "level": "medium",
+      "completed": false,
+      "task": "Make a donation in honour of someone important to you",
+      "tip": "$5-10 is enough :)"
+    },
+    {
+      "level": "easy",
+      "completed": false,
+      "task": "Help a stranger carry something",
+      "tip": "A grocery bag? A heavy box?"
+    },
+    {
+      "level": "medium",
+      "completed": false,
+      "task": "Give up your seat on the bus",
+      "tip": "Look for someone who might need it"
+    },
+    {
+      "level": "hard",
+      "completed": false,
+      "task": "Bake for a friend in need",
+      "tip": "Chocolate chip cookies sound good!"
+    },
+    {
+      "level": "hard",
+      "completed": false,
+      "task": "Prepare a homemade meal for someone important to you",
+      "tip": "Homemade pasta sauce isn't too hard"
+    },
+    {
+      "level": "hard",
+      "completed": false,
+      "task": "Buy a homeless person a hot meal",
+      "tip": "Ask them what they would like from a nearby shop"
+    },
+    {
+      "level": "easy",
+      "completed": false,
+      "task": "Go for coffee with a friend",
+      "tip": "Bonus if you pay for their coffee too!"
+    },
+    {
+      "level": "easy",
+      "completed": false,
+      "task": "Call a relative you haven't spoken to in a while",
+      "tip": "Ask about their day and update them on any exciting news in your life"
+    },
+    {
+      "level": "easy",
+      "completed": false,
+      "task": "Spend some time reading a book",
+      "tip": "Reading anything on a screen doesn't count ;)"
+    },
+    {
+      "level": "easy",
+      "completed": false,
+      "task": "Ask someone how their day is going",
+      "tip": "Short and sweet"
+    },
+    {
+      "level": "hard",
+      "completed": false,
+      "task": "Deliver lunch to a friend at work",
+      "tip": "It doesn't have to be homemade"
+    },
+    {
+      "level": "easy",
+      "completed": false,
+      "task": "Sign a petition for a cause you're passionate about",
+      "tip": "Check Facebook or Change.org for ideas"
+    },
+    {
+      "level": "hard",
+      "completed": false,
+      "task": "Sign up to volunteer a shift at a local non-profit",
+      "tip": "Options include a food bank, animal shelter or children's centre"
+    },
+    {
+      "level": "hard",
+      "completed": false,
+      "task": "Drop off a bag of non-perishables to your local food bank",
+      "tip": "Toiletries are often needed as well"
+    },
+    {
+      "level": "medium",
+      "completed": false,
+      "task": "Raid your closet for clothes to donate to a shelter",
+      "tip": "Wash them first please!"
+    },
+    {
+      "level": "easy",
+      "completed": false,
+      "task": "Take a nap today",
+      "tip": "Get your beauty rest"
+    },
+    {
+      "level": "easy",
+      "completed": false,
+      "task": "Eat a healthy dinner",
+      "tip": "Salads can be yummy"
+    },
+    {
+      "level": "medium",
+      "completed": false,
+      "task": "Carpool or bus instead of driving",
+      "tip": "We love our planet"
+    },
+    {
+      "level": "easy",
+      "completed": false,
+      "task": "Use a reusable product today",
+      "tip": "Mugs, water bottles, and bags are easy alternatives"
+    },
+    {
+      "level": "easy",
+      "completed": false,
+      "task": "Say no to a single-use item today",
+      "tip": "Takeout cutlery? Straw? Plastic cup?"
+    } ]
+}
