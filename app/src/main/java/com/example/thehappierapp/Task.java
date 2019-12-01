@@ -17,6 +17,9 @@ public class Task {
     public static Map<Integer, List<String>> easyMap = new HashMap<>();
     public static Map<Integer, List<String>> mediumMap = new HashMap<>();
     public static Map<Integer, List<String>> hardMap = new HashMap<>();
+    public static int easyIndex = 0;
+    public static int mediumIndex = 0;
+    public static int hardIndex = 0;
 
     public void makeMaps() {
         List<String> list1 = new ArrayList<>();
@@ -84,17 +87,31 @@ public class Task {
     public Task(String difficulty) {
         Map<Integer, List<String>> map;
         makeMaps();
+        int index = 0;
        if (difficulty.equals("easy")) {
            map = easyMap;
+           if(easyIndex >= easyMap.size()) {
+               easyIndex = 0;
+           }
+           index = ++easyIndex;
        } else if(difficulty.equals("medium")) {
+           if(mediumIndex >= mediumMap.size()) {
+               mediumIndex = 0;
+           }
            map = mediumMap;
+           index = ++mediumIndex;
        } else {
            map = hardMap;
+           if(hardIndex >= hardMap.size()) {
+               hardIndex = 0;
+           }
+           index = ++hardIndex;
        }
        int length = map.size();
-       Random value = new Random(length);
-       int val = value.nextInt(length);
-       List<String> taskMap = map.get(val-1);
+     //  Random value = new Random(length);
+       int value = (int)Math.random()%length + 1;
+       //int val = value.nextInt(length);
+       List<String> taskMap = map.get(index);
        this.task = taskMap.get(0);
        this.tip = taskMap.get(1);
     }
