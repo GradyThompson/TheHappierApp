@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,6 +15,9 @@ public class Complete extends AppCompatActivity{
         Intent intent = getIntent();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.complete);
+
+        TextView text = (TextView) findViewById(R.id.placeholder);
+        text.setText(DailyChoicesActivity.task);
 
         Button btn = findViewById(R.id.completeButton);
 
