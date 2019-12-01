@@ -11,5 +11,7 @@ public class Completed extends AppCompatActivity {
         Intent intent = getIntent();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.completed);
+
+        MainActivity.progress++;
     }
 }

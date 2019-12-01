@@ -12,18 +12,31 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 import android.widget.Button;
+import android.widget.ProgressBar;
+import android.widget.TextView;
 
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     public static String difficulty;
+    public static int progress = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button btn = findViewById(R.id.easy);
+        ProgressBar progressBar = (ProgressBar) findViewById(R.id.streak_bar);
+        progressBar.setProgress(progress);
+        TextView streaks = (TextView) findViewById(R.id.streak);
+        String streak;
+        if (progress != 1) {
+            streak = (progress + "days");
+        } else {
+            streak = (progress + "day");
+        }
+        streaks.setText(streak);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
