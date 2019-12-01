@@ -5,22 +5,100 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Random;
 
 public class Task {
     String tip;
-    String level;
     String task;
-    boolean complete;
     static String jsonFile = "app/questions.json";
+    public static Map<String, List<String>> easyMap = new HashMap<>();
+    public static Map<String, List<String>> mediumMap = new HashMap<>();
+    public static Map<String, List<String>> hardMap = new HashMap<>();
 
-    public Task(String task, String level, String tip, boolean complete) {
-        this.task = task;
-        this.level = level;
-        this.tip = tip;
-        this.complete = false;
+    public void makeMaps() {
+        List<String> list1 = new ArrayList<>();
+        list1.add("Hug someone in need");
+        list1.add("Make sure you know the person first ;)");
+        easyMap.put("1",list1);
+        List<String> list2 = new ArrayList<>();
+        list2.add("Buy the person behind you in line a coffee");
+        list2.add( "Buy yourself one too!");
+        mediumMap.put("1",list2);
+        List<String> list3 = new ArrayList<>();
+        list3.add("Call someone you haven't spoken to in a while");
+        list3.add( "Call back in an hour if they don't pick up the first time");
+        hardMap.put("1",list3);
+        List<String> list4 = new ArrayList<>();
+        list4.add("Compliment a stranger");
+        list4.add( "Is it their smile? Their top? Their aura?");
+        mediumMap.put("2",list4);
+        List<String> list5 = new ArrayList<>();
+        list5.add("Text your best friend how much they mean to you");
+        list5.add("Add a heart emoji if you're really feeling it");
+        mediumMap.put("3",list5);
+        List<String> list6 = new ArrayList<>();
+        list6.add( "Spend 10 minutes meditating today");
+        list6.add( "Look for an app or YouTube video if you need guidance");
+        hardMap.put("2",list6);
+        List<String> list7 = new ArrayList<>();
+        list7.add("Hold a door open for someone today");
+        list7.add("Bonus points if you smile :)");
+        easyMap.put("2",list7);
+        List<String> list8 = new ArrayList<>();
+        list8.add("Tell a stranger to have a great day");
+        list8.add("In line at the grocery store? Sitting next to someone on a bus?");
+        mediumMap.put("4",list8);
+        List<String> list9 = new ArrayList<>();
+        list9.add( "Leave a large tip");
+        list9.add("20%???? 25%???");
+        mediumMap.put("5",list9);
+        List<String> list10 = new ArrayList<>();
+        list10.add("Leave a large tip accompanied by a nice note or conversation");
+        list10.add("Make your server feel appreciated");
+        hardMap.put("3",list10);
+        List<String> list11 = new ArrayList<>();
+        list11.add("Offer to do an errand for a friend in need");
+        list11.add("Basically be Cinderella for an hour or two");
+        hardMap.put("4",list11);
+        List<String> list12 = new ArrayList<>();
+        list12.add( "Make a donation in honour of someone important to you");
+        list12.add( "$5-10 is enough :)");
+        mediumMap.put("6",list12);
+        List<String> list13 = new ArrayList<>();
+        list13.add( "Help a stranger carry something");
+        list13.add( "A grocery bag? A heavy box?");
+        easyMap.put("3",list13);
+        List<String> list14 = new ArrayList<>();
+        list14.add("Give up your seat on the bus");
+        list14.add("Look for someone who might need it");
+        mediumMap.put("7",list14);
+        List<String> list15 = new ArrayList<>();
+        list15.add("Bake for a friend in need");
+        list15.add("Chocolate chip cookies sound good!");
+        hardMap.put("5",list15);
     }
 
+    public Task(String difficulty) {
+        Map<String, List<String>> map;
+       if (difficulty.equals("easy")) {
+           map = easyMap;
+       } else if(difficulty.equals("medium")) {
+           map = mediumMap;
+       } else {
+           map = hardMap;
+       }
+       int length = map.size();
+       Random value = new Random(length);
+       int val = value.nextInt(length);
+       List<String> taskMap = map.get(val - 1);
+       this.task = taskMap.get(0);
+       this.tip = taskMap.get(1);
+    }
+
+/*
     public static List<Task> getTaskList() throws JSONException {
         JSONObject reader = new JSONObject(jsonFile);
         List<Task> taskList = new ArrayList<>();
@@ -44,23 +122,17 @@ public class Task {
                 .limit(3);
 
         return generalTasks;
-    }
+    }*/
 
 
     public String getTask() {
         return this.task;
     }
 
-    public String getLevel() {
-        return this.level;
-    }
-
+    
     public String getTip() {
         return this.tip;
     }
 
-    public boolean isCompleted() {
-        return this.complete;
-    }
 
 }
