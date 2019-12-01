@@ -30,7 +30,8 @@
         android:layout_width="300dp"
         android:layout_height="150dp"
         android:text="@string/COMPLETED"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:background="@drawable/button"/>
 
     <Button
         android:layout_marginTop="50dp"
@@ -38,7 +39,9 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="@string/CHANGETASK"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:background="@drawable/button"
+        style="@style/Widget.AppCompat.Button"/>
 
 
 </LinearLayout>
